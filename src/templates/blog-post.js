@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -17,28 +18,56 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <Bio />
+        <article
+          className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
+        >
+          <header className="post-content-header">
+            <h1 className="post-content-title">{post.frontmatter.title}</h1>
+          </header>
 
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+          {post.frontmatter.description && (
+            <p class="post-content-excerpt">{post.frontmatter.description}</p>
+          )}
+
+          {post.frontmatter.thumbnail && (
+            <div className="post-content-image">
+              <Img
+                className="kg-image"
+                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
+                alt={post.frontmatter.title}
+              />
+            </div>
+          )}
+
+          <div
+            className="post-content-body"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+
+          <footer className="post-content-footer">
+            {/* There are two options for how we display the byline/author-info.
+        If the post has more than one author, we load a specific template
+        from includes/byline-multiple.hbs, otherwise, we just use the
+        default byline. */}
+          </footer>
+
+          {/* <ul>
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul> */}
+        </article>
       </Layout>
     )
   }
@@ -62,6 +91,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 1360) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
