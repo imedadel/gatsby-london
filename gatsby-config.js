@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `London`,
     author: `Imed Adel`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Imed_Adel`,
     },
   },
   plugins: [
