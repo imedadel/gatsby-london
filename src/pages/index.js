@@ -8,12 +8,12 @@ import SEO from "../components/seo"
 
 import "../utils/global.scss"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
-const BlogIndex = ({ data }) => {
+const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={`/`} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>
       <SEO
         title="All posts"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
@@ -77,6 +77,6 @@ const indexQuery = graphql`
 export default props => (
   <StaticQuery
     query={indexQuery}
-    render={data => <BlogIndex data={data} {...props} />}
+    render={data => <BlogIndex location={props.location} props data={data} {...props} />}
   />
 )
