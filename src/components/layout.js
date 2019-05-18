@@ -39,13 +39,13 @@ class Layout extends React.Component {
             <nav id="swup" class="site-head-left">
               <ul className="nav" role="menu">
                 <li className="nav-home nav-current" role="menuitem">
-                  <a href="https://london.ghost.io/">Home</a>
+                  <Link to={`/`}>Home</Link>
                 </li>
                 <li className="nav-about" role="menuitem">
-                  <a href="https://london.ghost.io/about/">About</a>
+                  <Link to={`/about`}>About</Link>
                 </li>
                 <li className="nav-elements" role="menuitem">
-                  <a href="https://london.ghost.io/elements/">Elements</a>
+                  <Link to={`/elements`}>Elements</Link>
                 </li>
               </ul>
             </nav>
