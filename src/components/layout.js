@@ -60,7 +60,7 @@ class Layout extends React.Component {
                   href="https://www.facebook.com/ghost"
                   title="Facebook"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Facebook
                 </a>
@@ -68,7 +68,7 @@ class Layout extends React.Component {
                   href="https://twitter.com/tryghost"
                   title="Twitter"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   Twitter
                 </a>
@@ -76,7 +76,7 @@ class Layout extends React.Component {
                   href="https://feedly.com/i/subscription/feed/https://london.ghost.io/rss/"
                   title="RSS"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   RSS
                 </a>
@@ -89,10 +89,8 @@ class Layout extends React.Component {
             {children}
           </div>
         </main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer className="site-foot">
+        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash; Built with <a href="https://gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
         </footer>
       </div>
     )
