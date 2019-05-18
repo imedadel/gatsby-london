@@ -5,12 +5,16 @@ import Img from "gatsby-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostCard from "../components/postCard"
 
-import "../utils/global.scss"
+// import "../utils/global.scss"
+import "../utils/css/vars.css"
+import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  let postCounter = 0
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -20,22 +24,9 @@ const BlogIndex = ({ data }, location) => {
       />
       <Bio />
       {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
+        postCounter++
         return (
-          <article key={node.fields.slug}>
-            {node.frontmatter.thumbnail ? (
-              <Img sizes={node.frontmatter.thumbnail.childImageSharp.sizes} />
-            ) : null}
-            <h3>
-              <Link to={node.fields.slug}>{title}</Link>
-            </h3>
-            <small>{node.frontmatter.date}</small>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
-              }}
-            />
-          </article>
+          <PostCard key={node.fields.slug} count={postCounter} node={node} postClass={`post`} />
         )
       })}
     </Layout>
@@ -77,6 +68,8 @@ const indexQuery = graphql`
 export default props => (
   <StaticQuery
     query={indexQuery}
-    render={data => <BlogIndex location={props.location} props data={data} {...props} />}
+    render={data => (
+      <BlogIndex location={props.location} props data={data} {...props} />
+    )}
   />
 )
