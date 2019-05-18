@@ -22,7 +22,7 @@ const BlogIndex = ({ data }, location) => {
         title="All posts"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
-      <Bio />
+      {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">
@@ -68,7 +68,7 @@ const indexQuery = graphql`
             description
             thumbnail {
               childImageSharp {
-                sizes(maxWidth: 960) {
+                sizes(maxWidth: 1360) {
                   ...GatsbyImageSharpSizes
                 }
               }
