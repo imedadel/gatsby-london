@@ -14,9 +14,9 @@
     "gatsby-plugin-google-analytics": "^2.0.19",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-purgecss": "^3.1.1",
     "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.36",
     "gatsby-remark-copy-linked-files": "^2.0.12",
     "gatsby-remark-images": "^2.0.6",
@@ -26,7 +26,6 @@
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
-    "node-sass": "^4.12.0",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -38,9 +37,11 @@
     "url-join": "^4.0.0"
   },
   "devDependencies": {
-    "colorguard": "^1.2.1",
+    "autoprefixer": "^9.5.1",
     "husky": "^2.2.0",
-    "lost": "^8.3.1",
+    "postcss-color-function": "^4.1.0",
+    "postcss-custom-properties": "^8.0.10",
+    "postcss-easy-import": "^3.0.0",
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
   },

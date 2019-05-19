@@ -1,5 +1,5 @@
 const urljoin = require("url-join")
-const siteConfig = require('./siteConfig')
+const siteConfig = require("./siteConfig")
 
 module.exports = {
   siteMetadata: {
@@ -37,7 +37,7 @@ module.exports = {
               withWebp: true,
               showCaptions: true,
               quality: 75,
-              wrapperStyle: `margin: 7vw 0;`
+              wrapperStyle: `margin: 7vw 0;`,
             },
           },
           {
@@ -55,10 +55,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require(`lost`)(), require(`colorguard`)()],
-        precision: 8,
+        postCssPlugins: [
+          require("autoprefixer")({ browsers: ["last 2 versions"] }),
+          require("postcss-color-function")(),
+          require("postcss-custom-properties")({ preserve: false }),
+          require("postcss-easy-import")(),
+        ],
       },
     },
     {
