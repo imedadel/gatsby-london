@@ -34,7 +34,8 @@
     "typeface-alegreya": "^0.0.69",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
-    "typeface-nunito": "^0.0.72"
+    "typeface-nunito": "^0.0.72",
+    "url-join": "^4.0.0"
   },
   "devDependencies": {
     "colorguard": "^1.2.1",
