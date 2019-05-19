@@ -13,10 +13,7 @@ const AboutPage = ({ data }, location) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title="ABout"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO title="ABout" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
@@ -65,7 +62,9 @@ const indexQuery = graphql`
         title
       }
     }
-    benchAccounting: file(relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }) {
+    benchAccounting: file(
+      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
