@@ -1,11 +1,14 @@
+const urljoin = require("url-join")
+const siteConfig = require('./siteConfig')
+
 module.exports = {
   siteMetadata: {
-    title: `London`,
-    author: `Imed Adel`,
-    description: `A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: siteConfig.name,
+    author: siteConfig.author,
+    description: siteConfig.description,
+    siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
     social: {
-      twitter: `Imed_Adel`,
+      twitter: siteConfig.twitter,
     },
   },
   plugins: [
@@ -79,9 +82,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
+        name: siteConfig.name,
+        short_name: siteConfig.shortName,
+        start_url: siteConfig.prefix,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
