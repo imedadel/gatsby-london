@@ -5,21 +5,6 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link to={`/`}>{title}</Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link to={`/`}>{title}</Link>
-        </h3>
-      )
-    }
     return (
       <div className="site-wrapper">
         <header className="site-head">
@@ -57,7 +42,7 @@ class Layout extends React.Component {
             <div className="site-head-right">
               <div className="social-links">
                 <a
-                  href="https://www.facebook.com/ghost"
+                  href="https://www.facebook.com"
                   title="Facebook"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +50,7 @@ class Layout extends React.Component {
                   Facebook
                 </a>
                 <a
-                  href="https://twitter.com/tryghost"
+                  href="https://twitter.com"
                   title="Twitter"
                   target="_blank"
                   rel="noopener noreferrer"
