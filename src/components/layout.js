@@ -3,11 +3,16 @@ import { Link } from "gatsby"
 
 const Layout = props => {
   const { title, children } = props
+  const [toggleNav, setToggleNav] = React.useState(false)
   return (
-    <div className="site-wrapper">
+    <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
         <div className="site-head-container">
-          <a className="nav-burger" href={`#`}>
+          <a
+            className="nav-burger"
+            href={`#`}
+            onClick={() => setToggleNav(!toggleNav)}
+          >
             <div
               className="hamburger hamburger--collapse"
               aria-label="Menu"
