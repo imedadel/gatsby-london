@@ -7,7 +7,7 @@ const Layout = props => {
     <div className="site-wrapper">
       <header className="site-head">
         <div className="site-head-container">
-          <Link className="nav-burger" to={`/`}>
+          <a className="nav-burger" href={`#`}>
             <div
               className="hamburger hamburger--collapse"
               aria-label="Menu"
@@ -18,7 +18,7 @@ const Layout = props => {
                 <div className="hamburger-inner" />
               </div>
             </div>
-          </Link>
+          </a>
           <nav id="swup" class="site-head-left">
             <ul className="nav" role="menu">
               <li className="nav-home nav-current" role="menuitem">
