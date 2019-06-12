@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Layout = props => {
-  const { location, title, children } = props
-  const rootPath = `${__PATH_PREFIX__}/`
+  const { title, children } = props
   return (
     <div className="site-wrapper">
       <header className="site-head">
