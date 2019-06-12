@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "gatsby-london",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A custom, image-centric theme for Gatsby",
+  "version": "1.0.0",
+  "author": "Imed Adel <aadelimed@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ImedAdel/gatsby-london/issues"
   },
   "dependencies": {
     "gatsby": "^2.4.2",
@@ -48,13 +48,17 @@
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "ghost",
+    "gallery",
+    "blog",
+    "starter"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/ImedAdel/gatsby-london.git"
   },
   "scripts": {
     "build": "gatsby build",
