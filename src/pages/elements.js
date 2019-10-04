@@ -8,11 +8,11 @@ import SEO from "../components/seo"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 
-const ElementsPage = ({ data }, location) => {
+const ElementsPage = ({ data, ...props }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout title={siteTitle}>
+    <Layout title={siteTitle} location={props.location}>
       <SEO
         title="All posts"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
