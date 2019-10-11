@@ -21,29 +21,15 @@ const ElementsPage = ({ data }, location) => {
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <p>
-            This is{" "}
-            <strong>
-              <strong>bold</strong>
-            </strong>{" "}
-            and this is{" "}
-            <strong>
-              <strong>strong</strong>
-            </strong>
-            . This is{" "}
-            <em>
-              <em>italic</em>
-            </em>{" "}
-            and this is{" "}
-            <em>
-              <em>emphasized</em>
-            </em>
-            . This is <sup>superscript</sup>text and this is{" "}
-            <sub>subscript</sub> text. This is <u>underlined</u> and this is
+            This is <b>bold</b>
+            and this is <strong>strong</strong>. This is <i>italic</i> and this
+            is <em>emphasized</em>. This is <sup>superscript</sup>text and this
+            is <sub>subscript</sub> text. This is <u>underlined</u> and this is
             code:{" "}
             <code>
               for (;;) {"{"} ... {"}"}
             </code>
-            . Finally, this is a <a href="#">link</a>.
+            . Finally, this is a <a href="#link">link</a>.
           </p>
           <h2 id="heading-level-2">Heading Level 2</h2>
           <h3 id="heading-level-3">Heading Level 3</h3>
@@ -205,53 +191,53 @@ const ElementsPage = ({ data }, location) => {
           <h2 id="buttons">Buttons</h2>
           <ul className="actions">
             <li>
-              <a href="#" className="button primary">
+              <a href="#link" className="button primary">
                 Primary
               </a>
             </li>
             <li>
-              <a href="#" className="button">
+              <a href="#link" className="button">
                 Default
               </a>
             </li>
           </ul>
           <ul className="actions">
             <li>
-              <a href="#" className="button primary large">
+              <a href="#link" className="button primary large">
                 Large
               </a>
             </li>
             <li>
-              <a href="#" className="button">
+              <a href="#link" className="button">
                 Default
               </a>
             </li>
             <li>
-              <a href="#" className="button small">
+              <a href="#link" className="button small">
                 Small
               </a>
             </li>
           </ul>
           <ul className="actions fit">
             <li>
-              <a href="#" className="button primary fit">
+              <a href="#link" className="button primary fit">
                 Fit
               </a>
             </li>
             <li>
-              <a href="#" className="button fit">
+              <a href="#link" className="button fit">
                 Fit
               </a>
             </li>
           </ul>
           <ul className="actions fit small">
             <li>
-              <a href="#" className="button primary fit small">
+              <a href="#link" className="button primary fit small">
                 Fit + Small
               </a>
             </li>
             <li>
-              <a href="#" className="button fit small">
+              <a href="#link" className="button fit small">
                 Fit + Small
               </a>
             </li>
