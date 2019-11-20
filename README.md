@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://jamstack.studio">
-    <img alt="Jamstack Studio" src="https://raw.githubusercontent.com/ImedAdel/media/master/jamstack.studio_(Laptop%20with%20HiDPI%20screen).png" />
+  <a href="https://gatsby-london.netlify.com">
+    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" />
   </a>
 </p>
 
@@ -20,9 +20,10 @@ A custom, image-centric theme for Gatsby. Made for publishers and portfolios wit
 
 **Demo: https://gatsby-london.netlify.com**
 
+---
 <p align="center">
-  <a href="https://gatsby-london.netlify.com">
-    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" />
+  <a href="https://jamstack.studio">
+    <img alt="Jamstack Studio" src="https://raw.githubusercontent.com/ImedAdel/media/master/jamstack.studio_(Laptop%20with%20HiDPI%20screen).png" />
   </a>
 </p>
 
