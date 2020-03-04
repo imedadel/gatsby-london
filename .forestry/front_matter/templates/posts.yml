@@ -18,3 +18,5 @@ fields:
       format: markdown
   label: Content
   description: You Post content here
+pages:
+- content/blog/Glory To Jesus.md
