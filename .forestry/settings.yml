@@ -8,7 +8,7 @@ sections:
   path: Content/blog
   label: Write
 - type: directory
-  path: Content/blog
+  path: content/blog
   label: Blog
   create: documents
   match: "**/*"
