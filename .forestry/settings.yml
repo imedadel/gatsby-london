@@ -3,18 +3,7 @@ new_page_extension: md
 auto_deploy: false
 admin_path: "/.forestry"
 webhook_url: 
-sections:
-- type: document
-  path: Content/blog
-  label: Write
-- type: directory
-  path: content/blog
-  label: Blog
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - git
+sections: 
 upload_dir: Content/assets
 public_path: "/Content/blog"
 front_matter_path: ''

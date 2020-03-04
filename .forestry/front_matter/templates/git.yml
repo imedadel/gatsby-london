@@ -10,5 +10,3 @@ fields:
 - name: content
   type: boolean
   label: Content
-pages:
-- Content/blog/Pro.md.md
