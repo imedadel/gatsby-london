@@ -13,6 +13,8 @@ I used a poly reduction on the mesh as a proxy to be able to create my studio se
 
 This is the final render.
 
+Mr masimba
+
 <div class="kg-card kg-image-card kg-width-full">
 
 ![Darkness](./BLACK_II_desktop-1.jpg)
