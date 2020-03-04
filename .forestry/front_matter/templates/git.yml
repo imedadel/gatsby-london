@@ -7,5 +7,8 @@ fields:
   config:
     required: false
   label: Name
+- name: content
+  type: boolean
+  label: Content
 pages:
 - Content/blog/Pro.md.md
