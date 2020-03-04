@@ -3,7 +3,11 @@ new_page_extension: md
 auto_deploy: false
 admin_path: "/.forestry"
 webhook_url: 
-sections: 
+sections:
+- type: document
+  path: content/blog
+  label: Blog
+  match: "**/*"
 upload_dir: Content/assets
 public_path: "/Content/blog"
 front_matter_path: ''
