@@ -7,3 +7,5 @@ fields:
   config:
     required: false
   label: Name
+pages:
+- Content/blog/Pro.md.md
