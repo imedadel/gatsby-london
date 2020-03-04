@@ -4,9 +4,13 @@ auto_deploy: false
 admin_path: "/.forestry"
 webhook_url: 
 sections:
-- type: document
+- type: directory
   path: content/blog
   label: Blog
+  create: all
+  match: "**/*"
+  templates:
+  - posts
 upload_dir: Content/assets
 public_path: "/Content/blog"
 front_matter_path: ''
