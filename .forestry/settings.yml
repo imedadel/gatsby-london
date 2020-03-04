@@ -10,6 +10,8 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: md
+  templates:
+  - git
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
