@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: "/.forestry"
 webhook_url: 
 sections:
+- type: document
+  path: Content/blog
+  label: Write
+  match: "**/*"
 - type: directory
   path: Content/blog
   label: Blog
