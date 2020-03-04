@@ -12,8 +12,8 @@ sections:
   new_doc_ext: md
   templates:
   - git
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: Content/assets
+public_path: "/Content/blog"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
