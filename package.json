@@ -3,9 +3,9 @@
   "private": true,
   "description": "A custom, image-centric theme for Gatsby",
   "version": "1.0.0",
-  "author": "Imed Adel <aadelimed@gmail.com>",
+  "author": "Promise Masimba <promisemasimba411@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ImedAdel/gatsby-london/issues"
+    "url": "https://github.com/Promisemasimba/gatsby-london/issues"
   },
   "dependencies": {
     "gatsby": "^2.4.2",
