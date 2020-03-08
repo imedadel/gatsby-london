@@ -64,3 +64,4 @@ _First time with Gatsby? Take a look on the [official and community-created star
     Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+# promise
