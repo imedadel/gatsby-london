@@ -1,0 +1,36 @@
+---
+label: Posts
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Your title goes here
+- name: main_image
+  type: file
+  config:
+    maxSize: 250
+  label: Main Image
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+  description: You Post content here
+- name: posted_at
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: posted at
+pages:
+- content/blog/Promise/promise.md
